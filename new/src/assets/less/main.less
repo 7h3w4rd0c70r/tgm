@@ -1,0 +1,39 @@
+
+@import './variables.less';
+@import './fonts.less';
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#tgm {
+    height: 100%;
+    width: 100%;
+}
+
+@media(min-width: 320px) {
+    html { font-size: 8px; }
+    //@import './mobile/main.less';
+}
+
+@media(min-width: 768px) {
+    html { font-size: 11px; }
+    //@import '';
+}
+
+@media(min-width: 992px) {
+    html { font-size: 14px; }
+}
+
+@media(min-width: 1200px) {
+    html { font-size: 14px; }
+    @import './desktop/main.less';
+}
+
+@media(min-width: 1920px) {
+    html { font-size: 20px; }
+    @import './desktop/main.less';
+}
